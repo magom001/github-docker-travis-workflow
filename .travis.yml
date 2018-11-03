@@ -10,7 +10,7 @@ script:
 
 after_success:
   - docker build -t magom001/github-docker-travis-workflow-client ./client
-  - docker build -t magom001/github-docker-travis-workflow-ngingx ./nginx
+  - docker build -t magom001/github-docker-travis-workflow-nginx ./nginx
   - docker build -t magom001/github-docker-travis-workflow-server ./server
   - docker build -t magom001/github-docker-travis-workflow-worker ./worker
   # Log in to the docker CLI
